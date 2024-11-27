@@ -1,0 +1,71 @@
+/* About.css */
+
+.about-section {
+    position: relative;
+    height: auto;
+    padding: 80px 20px;
+    background: url('/Users/arshdeepsingh/portfolio/src/components/aboutimage.jpg') center/cover no-repeat; /* Adding background image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent overlay */
+    z-index: 1;
+}
+
+.about-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.about-content h2 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.about-content p {
+    font-size: 1.25em;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #555555;
+}
+
+.about-content button {
+    padding: 12px 25px;
+    background-color: #0077b6;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.1em;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 119, 182, 0.3);
+}
+
+.about-content button:hover {
+    background-color: #005f99;
+    box-shadow: 0 6px 20px rgba(0, 119, 182, 0.5);
+}
